@@ -32,7 +32,7 @@ export default {
 Storybook may take a few minutes to load, nothing is wrong with my code, i think its just a bug.
 
 Build an Image
-docker image build -t addison_janzen-winter_web_components:latest .
+docker image build -t janzen-winter_addison_coding_assignment12:latest .
  
 Running the Docker Container
-docker run -dp 8083:6006 --name addison_janzen-winter_web_components addison_janzen-winter_web_components:latest
+docker run -dp 8083:6006 --name janzen-winter_addison_coding_assignment12 janzen-winter_addison_coding_assignment12:latest
