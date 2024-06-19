@@ -2,6 +2,10 @@ import { FC } from "react";
 import styled from "styled-components";
 import { MyImageProps } from "./MyImage.types";
 
+export function sum(a: number, b:number) {
+  return a+ b;
+}
+
 const StyledImage = styled.img<{ disabled: boolean }>`
   /* Add styles here */
   opacity: ${(props) => (props.disabled ? "0.5" : "1")};
