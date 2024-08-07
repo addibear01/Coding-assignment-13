@@ -1,8 +1,23 @@
-import '@testing-library/jest-dom';
-import { sum } from "./myText";
+import { validateText } from './text.lib';
 
-test('adds 1 + 2 to equal 3',() => {
-    expect(sum(1,2)).toBe(3);
+describe('Text Logic', () => {
+  test('should return true when text meets the minimum length', () => {
+    const result = validateText('Hello', 3);
+    expect(result).toBe(true);
+  });
+
+  test('should return false when text does not meet the minimum length', () => {
+    const result = validateText('Hi', 3);
+    expect(result).toBe(false);
+  });
+
+  test('should return true when text meets the default minimum length', () => {
+    const result = validateText('Hi');
+    expect(result).toBe(true);
+  });
+
+  test('should return false when text is empty', () => {
+    const result = validateText('');
+    expect(result).toBe(false);
+  });
 });
-
-import {expect,test} from '@jest/globals';

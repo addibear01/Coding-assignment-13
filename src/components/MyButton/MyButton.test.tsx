@@ -1,8 +1,13 @@
-import '@testing-library/jest-dom';
-import { sum } from "./MyButton";
+import { isButtonDisabled } from './button.lib';
 
-test('adds 1 + 2 to equal 3',() => {
-    expect(sum(1,2)).toBe(3);
+describe('Button Logic', () => {
+  test('should return true when condition is true', () => {
+    const result = isButtonDisabled(true);
+    expect(result).toBe(true);
+  });
+
+  test('should return false when condition is false', () => {
+    const result = isButtonDisabled(false);
+    expect(result).toBe(false);
+  });
 });
-
-import {expect,test} from '@jest/globals';
