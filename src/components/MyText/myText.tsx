@@ -2,6 +2,10 @@ import { FC } from "react";
 import styled from "styled-components";
 import { MyTextProps } from "./MyText.types";
 
+export function sum(a: number, b:number) {
+  return a+ b;
+}
+
 const StyledText = styled.p<{ disabled: boolean; backgroundColor?: string }>`
   color: ${(props) => (props.disabled ? "#999" : "black")};
   background-color: ${(props) => (props.disabled ? "#ccc" : props.backgroundColor || "#FFFF00")}; // Default to yellow if no backgroundColor is provided
