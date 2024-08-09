@@ -1,0 +1,12 @@
+/* MyInput.css */
+.input-small {
+    padding: 5px;
+    font-size: 14px;
+  }
+  
+  .input-disabled {
+    background-color: #f0f0f0;
+    color: #999;
+    cursor: not-allowed;
+  }
+  

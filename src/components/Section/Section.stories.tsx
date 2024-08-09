@@ -1,6 +1,7 @@
+import React from 'react';
 import { StoryFn, Meta } from '@storybook/react';
-import Section from './section';
-// import { SectionProps } from './section.types';
+import Section from './Section'; // Ensure the path and case are correct
+import '../MySection.css'; // Ensure this file exists and the path is correct
 
 export default {
   title: 'Components/Section',

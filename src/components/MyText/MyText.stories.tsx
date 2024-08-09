@@ -1,6 +1,7 @@
 import { StoryFn, Meta } from '@storybook/react';
 import MyText from './myText';
 import { MyTextProps } from './MyText.types';
+import '../MyText.css';
 
 export default {
   title: "ReactComponentLibrary/MyText",

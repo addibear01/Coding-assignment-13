@@ -11,6 +11,7 @@ const StyledHeroImage = styled.img<{ disabled: boolean; backgroundColor?: string
   background-color: ${(props) => (props.disabled ? "#ccc" : props.backgroundColor || "#FFFF00")}; // Default to yellow if no backgroundColor is provided
   width: 100%;
   height: auto;
+  position: relative;
 `;
 
 const MyHeroImage: FC<MyHeroImageProps> = ({ disabled = false, src, backgroundColor }) => {

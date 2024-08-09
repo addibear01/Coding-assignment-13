@@ -1,0 +1,14 @@
+/* MySection.css */
+.section-primary {
+    padding: 20px;
+    background-color: #f8f9fa;
+    border: 1px solid #ddd;
+  }
+  
+  .section-disabled {
+    padding: 20px;
+    background-color: #e9ecef;
+    border: 1px solid #ddd;
+    color: #6c757d;
+  }
+  

@@ -1,6 +1,7 @@
 import { StoryFn, Meta } from '@storybook/react';
 import Link from './link';
 // import { LinkProps } from './link.types';
+import '../MyLink.css';
 
 export default {
   title: 'Components/Link',

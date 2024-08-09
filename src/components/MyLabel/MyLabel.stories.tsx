@@ -1,6 +1,7 @@
 import { Meta, StoryFn } from '@storybook/react';
 import MyLabel from './myLabel';
 import { MyLabelProps } from './MyLabel.types';
+import '../MyLabel.css';
 
 export default {
     title: "ReactComponentLibrary/MyLabel",
