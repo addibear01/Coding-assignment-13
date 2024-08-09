@@ -1,0 +1,27 @@
+/* MyLink.css */
+.link-primary {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  .link-black {
+    color: #000;
+    text-decoration: none;
+  }
+  
+  .link-blue {
+    color: #0056b3;
+    text-decoration: none;
+  }
+  
+  .link-hover:hover {
+    color: #0056b3;
+    text-decoration: underline;
+  }
+  
+  .link-disabled {
+    color: #6c757d;
+    pointer-events: none;
+    text-decoration: none;
+  }
+  

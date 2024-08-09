@@ -1,5 +1,6 @@
 import { StoryFn, Meta } from '@storybook/react';
 import MyImage from './MyImage';
+import '../MyImage.css';
 
 export default {
   title: "ReactComponentLibrary/MyImage",

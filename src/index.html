@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="path_to_your_css_file">
+</head>
+<body>
+    <div id="root"></div>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#skills">My Skills</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="about" class="about-section">
+        <div class="about-content">
+            <img src="path_to_profile_image" alt="Profile Image" class="profile-img">
+            <div class="intro">
+                <h1>Addison Janzen-Winter</h1>
+                <h2>Frontend Developer</h2>
+                <button>Contact Me!</button>
+            </div>
+        </div>
+        <div class="about-text">
+            <h2>About Me</h2>
+            <p>Hello, my name is Addison...</p>
+        </div>
+    </section>
+
+    <section id="skills" class="skills-section">
+        <h2>My Skills</h2>
+        <div class="skills-container">
+            <div class="skill-category">
+                <h3>Soft Skills</h3>
+                <ul>
+                    <li>Communication - verbal and written</li>
+                    <li>Teamwork</li>
+                    <li>Problem Solving</li>
+                </ul>
+            </div>
+            <!-- Repeat for Coding Skills, Other Skills, Tech Skills -->
+        </div>
+    </section>
+
+    <section id="projects" class="projects-section">
+        <h2>Projects</h2>
+        <div class="project-item">
+            <h3>Digital Recipe Book</h3>
+            <p>(html, CSS, JavaScript, PHP)</p>
+            <a href="WebsiteURL">WebsiteURL</a>
+        </div>
+        <!-- Repeat for other projects -->
+    </section>
+
+    <section id="contact" class="contact-section">
+        <h2>Contact Addison!</h2>
+        <form>
+            <input type="text" name="name" placeholder="Name">
+            <input type="email" name="email" placeholder="Email">
+            <input type="text" name="subject" placeholder="Subject">
+            <textarea name="message" placeholder="Your Message"></textarea>
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+</body>
+</html>

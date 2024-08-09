@@ -3,7 +3,7 @@ import styled from "styled-components";
 import { MyButtonProps } from "./MyButton.types";
 
 export function sum(a: number, b:number) {
-  return a+ b;
+  return a + b;
 }
 
 const StyledButton = styled.button<{ disabled: boolean; backgroundColor?: string }>`
@@ -11,13 +11,17 @@ const StyledButton = styled.button<{ disabled: boolean; backgroundColor?: string
   color: ${(props) => (props.disabled ? "#999" : "white")};
   font-size: 16px;
   padding: 10px 20px;
-  border: none;
+  border:2px solid black;
   cursor: ${(props) => (props.disabled ? "not-allowed" : "pointer")};
 `;
 
-const MyButton: FC<MyButtonProps> = ({ disabled = false, label = "button", backgroundColor }) => {
+const MyButton: FC<MyButtonProps> = ({ disabled = false, label = "button", backgroundColor, onClick }) => {
   return (
-    <StyledButton disabled={disabled} backgroundColor={backgroundColor}>
+    <StyledButton
+      disabled={disabled}
+      backgroundColor={backgroundColor}
+      onClick={onClick}  // Pass the onClick prop to StyledButton
+    >
       {label}
     </StyledButton>
   );

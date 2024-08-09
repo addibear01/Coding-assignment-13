@@ -1,5 +1,6 @@
 import { StoryFn, Meta } from '@storybook/react';
-import Input from './input';
+import Input from './Input'; // Corrected import to match the file name
+import '../MyInput.css'; // Ensure this file exists and the path is correct
 
 export default {
   title: 'Components/Input',

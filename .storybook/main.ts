@@ -15,6 +15,10 @@ const config: StorybookConfig = {
     name: '@storybook/react-vite',
     options: {},
   },
+  viteFinal: async (config) => {
+    // Customize the Vite config here, if needed
+    return config;
+  },
 };
 
 export default config;
